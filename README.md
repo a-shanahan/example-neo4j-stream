@@ -1,6 +1,5 @@
 # Neo4j with Kafka Streaming
 
-
 ## Overview
 
 A simple network integrating Neo4j with Kafka. This configuration has been tested 
@@ -10,6 +9,8 @@ This example simulates an NLP application where Named Entities have been extract
 from text and stored in a Graph Database. The following data model is used:
 
 ![alt text](data-model.png "Data Model")
+
+Readers are directed to the official [Neo4j](https://github.com/neo4j-contrib/neo4j-streams/tree/master/kafka-connect-neo4j/docker) repo for a full walkthrough. 
 
 The docker compose will create the following containers:
 

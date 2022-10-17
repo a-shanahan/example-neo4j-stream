@@ -1,7 +1,7 @@
 import uuid
-from kafka import KafkaProducer
 import json
 import random
+from kafka import KafkaProducer
 
 producer = KafkaProducer(bootstrap_servers='localhost:29092')
 topic = 'example-topic'

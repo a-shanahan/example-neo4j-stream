@@ -14,12 +14,16 @@ consumer.subscribe([topic])
 
 
 def start_consumer():
+    """
+    Start local Kafka consumer
+    :return: null
+    """
     while True:
         mess = consumer.poll(0.1, max_records=1)
         if len(mess) == 0:
             continue
         try:
-            for key, j in mess.items():
+            for _, j in mess.items():
                 for message in j:
                     print(f'Key: {message.key} Value: {message.value}')
         except NoBrokersAvailable as e:
